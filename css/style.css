@@ -59,6 +59,18 @@ body{
 .whatsappbutton{
   cursor: pointer;
 }
+#whatsapp{
+  cursor: pointer;
+}
+#whatsapp:hover{
+  color: #224398;
+}
+#instagram:hover{
+  color: #224398;
+}
+#facebook:hover{
+  color: #224398;
+}
 #search{
   width: 50%;
   display: flex;
@@ -220,7 +232,7 @@ body{
   display: flex;
 }
 #ul-categorias img{
-  width: 150px;
+  width: 170px;
 }
 
 #ul-categorias li{
@@ -241,12 +253,81 @@ body{
   color: #FFBD00;
   text-decoration: none;
 }
+.card-item a {
+  display: block;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-item a:hover img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
 
 
+.main-pesquisar{
+  background-color: white;
+}
 
+/* barra de pesquisa */
+.containerPesquisar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+#resultados{
+  display: flex;
+  flex-direction: row;
+  max-width: 1140px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #000;
+}
+#resultadosH2{
+  margin-bottom: 50px;
+  color: #000;
+}
+.produto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 0 10px black;
+  transition: transform 0.2s;
+  background-color: #0B95E3;
+}
+.produto img{
+  width: auto;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  margin: 20px;
 
-
-
+}
+.produto a{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.produto p{
+  height: 100px;
+  
+}
+.produto h2{
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
@@ -324,4 +405,14 @@ footer{
   width: 170px;
   height: auto;
   margin-right: 20px;
+}
+
+.footer-info a{
+  color: white;
+  text-decoration: none;
+}
+#link:hover{
+  color: #0B95E3;
+  text-decoration: none;
+  cursor: pointer;
 }
