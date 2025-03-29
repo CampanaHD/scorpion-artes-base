@@ -11,7 +11,14 @@ body{
   background-size: cover; /* Faz a imagem cobrir toda a tela */
   background-attachment: fixed; /* Mantém o fundo fixo ao rolar a página */
   background-position: center;
-  background-color: #0B95E3!important;
+  background-color: black!important;
+}
+.container-navbar{
+  display: flex;
+  justify-content: space-evenly!important;
+  align-items: center;
+  padding: 10px 20px;
+  /* border: white 2px solid; */
 }
 .navbar{
   background-color: black;
@@ -26,6 +33,9 @@ body{
   align-items: start;
   font-size: larger;
 }
+.navbar-nav{
+  margin-bottom: 20px;
+}
 .navbar-nav li{
   display: flex;
   justify-content: center;
@@ -33,7 +43,7 @@ body{
 }
 #ScorpionsArtes{
   cursor: default;
-  font-size: larger;
+  font-size: 22px;
   font-weight: 460;
 }
 #ScorpionsArtes p{
@@ -56,14 +66,23 @@ body{
   -webkit-text-fill-color: transparent;
   margin: 0;
 }
+#menu-links{
+  display: flex;
+
+}
+
 .whatsappbutton{
   cursor: pointer;
 }
 #whatsapp{
   cursor: pointer;
+  margin-right: 5px;
 }
 #whatsapp:hover{
   color: #224398;
+}
+#instagram{
+  margin-right: 5px;
 }
 #instagram:hover{
   color: #224398;
@@ -72,7 +91,7 @@ body{
   color: #224398;
 }
 #search{
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
@@ -113,7 +132,7 @@ body{
 #links-uteis{
   display: flex;
   flex-direction: row;
-  background-color: #0B95E3;
+  background: linear-gradient(to right, #224398, #EB1571, #FFBD00, #23B726, #0B95E3);
   height: 4vh;
   font-weight: 600;
 }
@@ -224,10 +243,7 @@ body{
   width: 100%;
   border-radius: 20px;
 }
-#icons ion-icon{
-  font-size: 25px;
-  
-}
+
 #ul-categorias{
   display: flex;
 }
@@ -246,7 +262,7 @@ body{
   align-items: center;
   margin: 20px 0;
   text-decoration: none;
-  color: #000;
+  color: white;
   font-weight: 600;
 }
 #ul-categorias a:hover{
@@ -391,7 +407,10 @@ body{
 
 
 
-
+.barra-footer{
+  background: linear-gradient(to right, #224398, #EB1571, #FFBD00, #23B726, #0B95E3);
+  height: 2vh;
+}
 footer{
   background-color: #212529;
   height: 30vh;
