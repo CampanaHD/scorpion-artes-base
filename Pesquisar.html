@@ -10,52 +10,52 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="Imagens/Logo-Scorpions-Artes.png" class="rounded float-start" id="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-xxl container-navbar">
+            <a class="navbar-brand" href="index.html">
+                <img src="Imagens/Logo-Scorpions-Artes.png" class="rounded float-start" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                
+                <ul class="navbar-nav d-flex w-100 flex-wrap">
+                    <li id="ScorpionsArtes" class="me-auto"><p id="ScorpionsIcone">Scorpions </p><p id="Artes"> Artes </p> <p>| Sinalização Viária e Comunicação Visual</p></li>
                     
-                    <ul class="navbar-nav d-flex w-100 flex-wrap">
-                        <li id="ScorpionsArtes" class="me-auto"><p id="ScorpionsIcone">Scorpions </p><p id="Artes"> Artes </p> <p>| Sinalização Viária e Comunicação Visual</p></li>
-                        
-                        <div id="menu-links" class="d-flex align-items-center justify-content-end flex-grow-1">
-                            <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-                            <li>
-                                <div id="icons">
-                                    <a onclick="enviarWhatsAppIcone()"><i class="bi bi-whatsapp fs-3" id="whatsapp"></i></a>
-                                    <a href="https://www.instagram.com/scorpionsartesjundiai/"><i class="bi bi-instagram fs-3" id="instagram"></i></a>
-                                    <a href="https://m.facebook.com/scorpionsartesjundiai/"><i class="bi bi-facebook fs-3" id="facebook"></i></a>
-                                </div>
-                            </li>
-                        </div>   
-                    </ul>
-                    <div id="search" class="input-group">
-                        <input class="form-control" list="datalistOptions" id="exampleDataList" 
-                            placeholder="O que você está procurando?" 
-                            oninput="atualizarSugestoes()" 
-                            onkeyup="pesquisarProdutos()">
-                        <button class="btn btn-outline-secondary" type="button" onclick="buscar()">
-                            <i class="bi bi-search search-icon"></i>
-                        </button>
-                        <datalist id="datalistOptions">
-                            <option value="Adesivos">
-                            <option value="Banners">
-                            <option value="Blocos e Talões">
-                            <option value="Cartões de Visita">
-                            <option value="Envelopes">
-                        </datalist>
-                    </div>
+                    <div id="menu-links" class="d-flex align-items-center flex-grow-1">
+                        <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                        <li>
+                            <div id="icons">
+                                <a onclick="enviarWhatsAppIcone()"><i class="bi bi-whatsapp fs-3" id="whatsapp"></i></a>
+                                <a href="https://www.instagram.com/scorpionsartesjundiai/"><i class="bi bi-instagram fs-3" id="instagram"></i></a>
+                                <a href="https://m.facebook.com/scorpionsartesjundiai/"><i class="bi bi-facebook fs-3" id="facebook"></i></a>
+                            </div>
+                        </li>
+                    </div>   
+                </ul>
+                <div id="search" class="input-group">
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" 
+                        placeholder="O que você está procurando?" 
+                        oninput="atualizarSugestoes()" 
+                        onkeyup="pesquisarProdutos()">
+                    <button class="btn btn-outline-secondary" type="button" onclick="buscar()">
+                        <i class="bi bi-search search-icon"></i>
+                    </button>
+                    <datalist id="datalistOptions">
+                        <option value="Adesivos">
+                        <option value="Banners">
+                        <option value="Blocos e Talões">
+                        <option value="Cartões de Visita">
+                        <option value="Envelopes">
+                    </datalist>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
         <!-- funciona poha -->
         <div id="links-uteis">
             <div class="container-xxl container-Links-uteis">
@@ -220,6 +220,7 @@ window.onload = function() {
 
     
     <footer>
+        <div class="barra-footer"></div>
         <div class="container-xxl container-footer">
             <div class="footer-content">
                 <div class="footer-logo">
